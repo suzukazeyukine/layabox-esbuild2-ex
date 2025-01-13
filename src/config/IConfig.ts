@@ -28,7 +28,7 @@ export default interface IConfig {
    * ...
    */
   esbuild?: BuildOptions;
-  /**自定义端口号 */
+  /**自定义端口号 填0将自动分配端口*/
   port?: number;
 }
 

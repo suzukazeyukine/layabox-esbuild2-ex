@@ -7,6 +7,11 @@
 
 #### 此项目是Layabox-esbuild2的基础上根据我本人使用场景进行修改的版本
 
+[![NPM version][npm-image1]][npm-url1]
+
+[npm-image1]: https://img.shields.io/npm/v/layabox-esbuild2-ex
+[npm-url1]: https://npmjs.org/package/layabox-esbuild2-ex
+
 #### 以下是原版的介绍
 
 # Layabox-esbuild2

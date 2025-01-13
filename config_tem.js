@@ -25,4 +25,6 @@ module.exports = {
    * plugins https://esbuild.github.io/plugins/
    */
   esbuild: {},
+  /**自定义端口号 填0将自动分配端口 */
+  port: 0
 };

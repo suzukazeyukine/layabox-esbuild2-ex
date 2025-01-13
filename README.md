@@ -1,3 +1,14 @@
+# Layabox-esbuild2-ex
+
+## 先感谢一下yayaluoya大佬的开源！
+### 感谢yayaluoya大佬的开源！
+### 感谢yayaluoya大佬的开源！
+### 感谢yayaluoya大佬的开源！
+
+#### 此项目是Layabox-esbuild2的基础上根据我本人使用场景进行修改的版本
+
+#### 以下是原版的介绍
+
 # Layabox-esbuild2
 
 #### 对比上一版 layabox-esbuild

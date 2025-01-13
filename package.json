@@ -1,6 +1,6 @@
 {
-  "name": "layabox-esbuild2",
-  "version": "2.0.10",
+  "name": "layabox-esbuild2-ex",
+  "version": "0.0.1",
   "description": "用esbuild来构建layabox项目，修改代码后立即就能看到更改，而不用傻傻等编译。",
   "main": "index.js",
   "bin": {
@@ -14,15 +14,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yayaluoya/layabox-esbuild2.git"
+    "url": "git+https://github.com/suzukazeyukine/layabox-esbuild2-ex"
   },
-  "author": "yayaluoya@sina.com",
-  "authorName": "yayaluoya",
+  "author": "i@yknh.cc",
+  "authorName": "suzukazeyukine",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yayaluoya/layabox-esbuild2/issues"
+    "url": "https://github.com/suzukazeyukine/layabox-esbuild2-ex/issues"
   },
-  "homepage": "https://github.com/yayaluoya/layabox-esbuild2#readme",
+  "homepage": "https://github.com/suzukazeyukine/layabox-esbuild2-ex#readme",
   "dependencies": {
     "chalk": "^4.1.0",
     "commander": "^11.0.0",

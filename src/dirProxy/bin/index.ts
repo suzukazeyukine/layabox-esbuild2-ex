@@ -1,13 +1,13 @@
+import { createReadStream, stat } from 'fs';
+import http from 'http';
+import mime from 'mime';
+import { AddressInfo } from 'net';
+import { extname, join } from 'path';
+import ResURL from '../../_T/ResURL';
+import { crossDomainHead } from '../../com/ResHead';
 import MainConfig from '../../config/MainConfig';
 import HttpTool from '../../http/HttpTool';
-import ResURL from '../../_T/ResURL';
 import BinTool from './BinTool';
-import { join, extname } from 'path';
-import { createReadStream, stat } from 'fs';
-import mime from 'mime';
-import { crossDomainHead } from '../../com/ResHead';
-import { AddressInfo } from 'net';
-import http from 'http';
 
 /**
  * bin目录代理
@@ -16,9 +16,10 @@ export default class BinProxy {
   /**
    * 开始
    * @param srcProxyPort src代理的端口
+   * @param customPort 自定义端口
    * @returns
    */
-  static start(srcProxyPort: number) {
+  static start(srcProxyPort: number, customPort?: number) {
     return HttpTool.createServer((req, res) => {
       /**
        * 忽略掉请求后的search和hash值并对特殊字符解码
@@ -108,7 +109,7 @@ export default class BinProxy {
           }
           break;
       }
-    }, 0).then((server) => {
+    }, customPort || 0).then((server) => {
       return (server.address() as AddressInfo).port;
     });
   }

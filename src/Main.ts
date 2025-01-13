@@ -1,14 +1,14 @@
+import chalk from 'chalk';
+import { version } from 'esbuild';
+import { openUrl } from './_T/openUrl';
+import TestMain from './_test/TestMain';
+import { getVar } from './config/getVar';
 import IConfig from './config/IConfig';
 import MainConfig from './config/MainConfig';
-import chalk from 'chalk';
-import TestMain from './_test/TestMain';
 import PackageConfig from './config/PackageConfig';
-import { version } from 'esbuild';
-import SrcProxy from './dirProxy/src';
 import BinProxy from './dirProxy/bin';
+import SrcProxy from './dirProxy/src';
 import HttpTool from './http/HttpTool';
-import { openUrl } from './_T/openUrl';
-import { getVar } from './config/getVar';
 
 /**
  * layaboxEsbuild构建实例
@@ -22,7 +22,7 @@ export default class layaboxEsbuild {
     //代理src
     let strProxyPort = await SrcProxy.start(config.esbuild);
     //代理bin
-    let binProxyPort = await BinProxy.start(strProxyPort);
+    let binProxyPort = await BinProxy.start(strProxyPort, config.port);
     //提示bin目录的主页地址
     console.log(
       chalk.gray(

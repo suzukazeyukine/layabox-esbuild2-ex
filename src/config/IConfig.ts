@@ -28,6 +28,8 @@ export default interface IConfig {
    * ...
    */
   esbuild?: BuildOptions;
+  /**自定义端口号 */
+  port?: number;
 }
 
 /**
@@ -45,5 +47,6 @@ export function getDefConfig(): IConfig {
     ifOpenHome: true,
     ifUpdateNow: false,
     esbuild: {},
+    port: 0
   };
 }
